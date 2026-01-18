@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox nodeOrientation="LEFT_TO_RIGHT" spacing="15" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svalero.ui.ClienteController">
+
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="UI Minero" />
+
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label style="-fx-font-size: 14px;" text="Nombre: " />
+            <TextField fx:id="txtNombre" prefWidth="150" promptText="Cliente1" />
+
+            <Region prefHeight="36.0" prefWidth="28.0" />
+
+            <Button fx:id="btnConectar" onAction="#onConectar" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8.20;" text="Conectar" />
+        </HBox>
+   <VBox prefHeight="200.0" prefWidth="100.0">
+      <children>
+          <Separator />
+          <Label style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Log de Clientes" />
+          <TextArea fx:id="txtLog" editable="false" prefHeight="145.0" prefWidth="339.0" style="-fx-font-family: 'Courier New';" VBox.vgrow="ALWAYS" />
+          <Separator />
+          <ProgressBar fx:id="progressBar" blendMode="GREEN" cache="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="20.0" prefWidth="338.0" />
+      </children>
+   </VBox>
+
+</VBox>
