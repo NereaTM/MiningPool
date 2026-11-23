@@ -10,21 +10,15 @@ Este proyecto implementa un sistema cliente-servidor donde:
 
 ## Funcionalidades
 
-### Obligatorias
 - Generación de paquetes de datos (transacciones)
 - Conexión/desconexión de clientes al servidor
 - Gestión concurrente de múltiples clientes
 - Búsqueda y envío de soluciones por parte de los clientes
 - Validación de soluciones en el servidor
-
-### Opcionales
 - **UI para clientes** - Muestra logs y barra de progreso
 - **UI para servidor** - Muestra conexiones y soluciones encontradas
 - **Minería concurrente** - Cada cliente procesa rangos en paralelo
 - **Configuración de dificultad** - Cuántos ceros debe tener el hash
 
 
-
-## Licencia
-Proyecto escolar de DAM Curso 2025–2026. Programación de servicios
 
